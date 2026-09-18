@@ -1,12 +1,10 @@
 export type EventCategory = 
   | 'Conference'
   | 'Expo'
-  | 'Networking'
   | 'Corporate'
-  | 'Business'
+  | 'Summit'
   | 'Community'
-  | 'Workshop'
-  | 'Seminar'
+  | 'Networking'
   | 'Other';
 
 export type EventStatus = 'Confirmed' | 'Postponed' | 'Cancelled' | 'TBC';

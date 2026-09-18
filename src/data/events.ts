@@ -66,12 +66,10 @@ export const CATEGORIES: { label: string; value: string }[] = [
   { label: 'All', value: 'All' },
   { label: 'Conferences', value: 'Conference' },
   { label: 'Expos', value: 'Expo' },
-  { label: 'Networking', value: 'Networking' },
-  { label: 'Business', value: 'Business' },
   { label: 'Corporate', value: 'Corporate' },
+  { label: 'Summits', value: 'Summit' },
   { label: 'Community', value: 'Community' },
-  { label: 'Workshops', value: 'Workshop' },
-  { label: 'Seminars', value: 'Seminar' }
+  { label: 'Networking', value: 'Networking' }
 ];
 
 export function getVenuesList(events: MelbourneEvent[]): string[] {
