@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Montserrat:wght@400;500;600;700;800;900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-montserrat: "Montserrat", sans-serif;
+  
+  --color-rayo-charcoal: #1f1f23;
+  --color-rayo-yellow: #f2c300;
+
+  --color-brand-primary: #ffffff;
+  --color-brand-accent: var(--color-rayo-yellow);
+  --color-surface-bg: var(--color-rayo-charcoal);
+  --color-surface-card: rgba(255, 255, 255, 0.03);
+  --color-line-border: rgba(255, 255, 255, 0.06);
+}
+
+@layer base {
+  html.dark-mode, html:not(.light-mode) {
+    color-scheme: dark;
+  }
+  html.light-mode {
+    color-scheme: light;
+  }
+
+  body {
+    @apply font-sans antialiased transition-colors duration-200;
+  }
+
+  html.dark-mode body, html:not(.light-mode) body {
+    background-color: #141417;
+    color: #f4f4f5;
+  }
+
+  html.light-mode body {
+    background-color: #e6e6ec;
+    color: #18181b;
+  }
+}
+
+@layer utilities {
+  .glass-card {
+    @apply backdrop-blur-3xl rounded-3xl transition-colors duration-200;
+  }
+  
+  html.dark-mode .glass-card {
+    @apply bg-white/[0.02] border border-white/[0.05];
+  }
+
+  html.light-mode .glass-card {
+    @apply bg-white/80 border border-zinc-300 shadow-sm;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 3px;
+  }
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background: rgba(242, 195, 0, 0.2);
+    border-radius: 10px;
+  }
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: rgba(242, 195, 0, 0.4);
+  }
+}
