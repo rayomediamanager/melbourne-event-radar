@@ -32,10 +32,10 @@ export const FilterBar: React.FC<FilterBarProps> = ({
   const isFiltered = selectedCategory !== 'All' || selectedVenue !== 'All' || searchQuery.trim() !== '';
 
   return (
-    <div className={`border-b py-5 transition-colors duration-200 ${
-      isDark ? 'bg-[#17171a]/80 border-white/[0.06]' : 'bg-[#dedee5]/90 border-zinc-300/90'
+    <div className={`py-3.5 transition-colors duration-200 ${
+      isDark ? 'bg-[#17171a]/70' : 'bg-[#dedee5]/80'
     }`}>
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-4">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-3">
         
         {/* Top Controls: Search Bar & Venue Dropdown */}
         <div className="flex flex-col md:flex-row md:items-center justify-between gap-3">
@@ -94,7 +94,7 @@ export const FilterBar: React.FC<FilterBarProps> = ({
                     value={venue} 
                     className={isDark ? 'bg-[#1f1f23] text-white' : 'bg-zinc-100 text-zinc-900'}
                   >
-                    {venue === 'Others' ? 'Others (Other Venues)' : venue}
+                    {venue}
                   </option>
                 ))}
               </select>

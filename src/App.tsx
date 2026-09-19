@@ -146,9 +146,9 @@ export default function App() {
         return false;
       }
 
-      // 3. Venue match (supports 5 primary venues + 'Others')
+      // 3. Venue match (supports 5 primary venues + 'Other Venues')
       if (selectedVenue !== 'All') {
-        if (selectedVenue === 'Others') {
+        if (selectedVenue === 'Other Venues' || selectedVenue === 'Others') {
           if (isPrimaryVenue(event.venue)) {
             return false;
           }
@@ -242,26 +242,36 @@ export default function App() {
         onSuggestClick={() => setIsSuggestModalOpen(true)}
       />
 
-      {/* Dynamic Month Selector Bar */}
-      <MonthSelector
-        months={dynamicMonths}
-        selectedMonth={selectedMonth}
-        onSelectMonth={handleSelectMonth}
-      />
+      {/* Sticky Navigation & Filter Panel (Browse Schedule, Search Bar, Venue Filter, TYPE Filter) */}
+      <div 
+        id="sticky-navigation-filter-panel"
+        className={`sticky top-0 z-30 transition-colors duration-200 shadow-md backdrop-blur-md ${
+          isDark 
+            ? 'bg-[#141417]/95 border-b border-white/[0.08]' 
+            : 'bg-[#e6e6ec]/95 border-b border-zinc-300/90'
+        }`}
+      >
+        {/* Dynamic Month Selector Bar */}
+        <MonthSelector
+          months={dynamicMonths}
+          selectedMonth={selectedMonth}
+          onSelectMonth={handleSelectMonth}
+        />
 
-      {/* Filters (Categories, Venues, Search) */}
-      <FilterBar
-        selectedCategory={selectedCategory}
-        onSelectCategory={setSelectedCategory}
-        selectedVenue={selectedVenue}
-        onSelectVenue={setSelectedVenue}
-        venues={allVenues}
-        searchQuery={searchQuery}
-        onSearchChange={setSearchQuery}
-        onResetFilters={handleResetFilters}
-        totalFilteredCount={filteredEvents.length}
-        totalCount={EVENTS.length}
-      />
+        {/* Filters (Categories, Venues, Search) */}
+        <FilterBar
+          selectedCategory={selectedCategory}
+          onSelectCategory={setSelectedCategory}
+          selectedVenue={selectedVenue}
+          onSelectVenue={setSelectedVenue}
+          venues={allVenues}
+          searchQuery={searchQuery}
+          onSearchChange={setSearchQuery}
+          onResetFilters={handleResetFilters}
+          totalFilteredCount={filteredEvents.length}
+          totalCount={EVENTS.length}
+        />
+      </div>
 
       {/* Main Content Area: Chronological Event List */}
       <main className="flex-1 max-w-6xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-10">

@@ -12,10 +12,10 @@ export const Header: React.FC<HeaderProps> = ({ onSuggestClick, eventCount, acti
   const { isDark, toggleTheme } = useTheme();
 
   return (
-    <header className={`border-b sticky top-0 z-30 backdrop-blur-md transition-colors duration-200 ${
+    <header className={`border-b transition-colors duration-200 ${
       isDark 
-        ? 'border-white/[0.07] bg-[#1a1a1e]/90 text-white' 
-        : 'border-zinc-300/90 bg-[#e2e2e8]/95 text-zinc-900 shadow-xs'
+        ? 'border-white/[0.07] bg-[#1a1a1e] text-white' 
+        : 'border-zinc-300/90 bg-[#e2e2e8] text-zinc-900'
     }`}>
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Top announcement / edition pill */}

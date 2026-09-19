@@ -79,7 +79,7 @@ export const PRIMARY_VENUES = [
   'Rydges Melbourne'
 ] as const;
 
-export const OTHER_VENUE_LABEL = 'Others';
+export const OTHER_VENUE_LABEL = 'Other Venues';
 
 export function isPrimaryVenue(venue: string): boolean {
   return PRIMARY_VENUES.some((pv) => venue.toLowerCase().includes(pv.toLowerCase()));

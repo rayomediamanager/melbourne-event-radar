@@ -17,10 +17,10 @@ export const MonthSelector: React.FC<MonthSelectorProps> = ({
   const { isDark } = useTheme();
 
   return (
-    <div className={`border-b py-3 transition-colors duration-200 ${
+    <div className={`border-b py-2.5 transition-colors duration-200 ${
       isDark 
-        ? 'border-white/[0.08] bg-[#1a1a1e]/40' 
-        : 'border-zinc-300/80 bg-[#dedee4]/80'
+        ? 'border-white/[0.08] bg-[#1a1a1e]/50' 
+        : 'border-zinc-300/80 bg-[#dedee4]/90'
     }`}>
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
