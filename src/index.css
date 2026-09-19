@@ -16,10 +16,10 @@
 }
 
 @layer base {
-  html.dark-mode, html:not(.light-mode) {
+  html.dark-mode {
     color-scheme: dark;
   }
-  html.light-mode {
+  html.light-mode, html:not(.dark-mode) {
     color-scheme: light;
   }
 
@@ -27,12 +27,12 @@
     @apply font-sans antialiased transition-colors duration-200;
   }
 
-  html.dark-mode body, html:not(.light-mode) body {
+  html.dark-mode body {
     background-color: #141417;
     color: #f4f4f5;
   }
 
-  html.light-mode body {
+  html.light-mode body, html:not(.dark-mode) body {
     background-color: #e6e6ec;
     color: #18181b;
   }
@@ -47,7 +47,7 @@
     @apply bg-white/[0.02] border border-white/[0.05];
   }
 
-  html.light-mode .glass-card {
+  html.light-mode .glass-card, html:not(.dark-mode) .glass-card {
     @apply bg-white/80 border border-zinc-300 shadow-sm;
   }
 

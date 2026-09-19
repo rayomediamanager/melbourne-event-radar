@@ -98,43 +98,13 @@ export function formatMonthLabel(monthKey: string): string {
 }
 
 /**
- * Determines the default month to show on initial load:
- * 1. Current month stays active until the month changes.
- * 2. Next future month containing events.
- * 3. Fallback to 'all-upcoming'.
+ * Determines the default month/view to show on initial load:
+ * Defaults to 'all-upcoming' so users start in the "All Upcoming" view.
  */
 export function getDefaultMonthKey(
-  events: MelbourneEvent[],
-  todayStr: string = getLocalDateString()
+  _events: MelbourneEvent[],
+  _todayStr: string = getLocalDateString()
 ): string {
-  const currentMonthKey = todayStr.substring(0, 7);
-
-  // 1. Current month tab stays first until the month changes
-  const hasEventsInCurrent = events.some((e) => e.startDate.startsWith(currentMonthKey));
-  if (hasEventsInCurrent) {
-    return currentMonthKey;
-  }
-
-  // 2. Find next future month chronologically containing events
-  const distinctMonths = Array.from(
-    new Set(events.map((e) => e.startDate.substring(0, 7)))
-  ).sort();
-
-  const futureMonths = distinctMonths.filter((m) => m > currentMonthKey);
-  if (futureMonths.length > 0) {
-    return futureMonths[0];
-  }
-
-  // 3. Fallback: check if any month has upcoming events
-  for (const m of distinctMonths) {
-    const hasUpcoming = events.some(
-      (e) => e.startDate.startsWith(m) && isEventUpcoming(e, todayStr)
-    );
-    if (hasUpcoming) {
-      return m;
-    }
-  }
-
   return 'all-upcoming';
 }
 

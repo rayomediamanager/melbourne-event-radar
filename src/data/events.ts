@@ -67,7 +67,6 @@ export const CATEGORIES: { label: string; value: string }[] = [
   { label: 'Conferences', value: 'Conference' },
   { label: 'Expos', value: 'Expo' },
   { label: 'Corporate', value: 'Corporate' },
-  { label: 'Summits', value: 'Summit' },
   { label: 'Community', value: 'Community' },
   { label: 'Networking', value: 'Networking' }
 ];

@@ -2,7 +2,6 @@ export type EventCategory =
   | 'Conference'
   | 'Expo'
   | 'Corporate'
-  | 'Summit'
   | 'Community'
   | 'Networking'
   | 'Other';

@@ -25,8 +25,6 @@ export function getCategoryBadgeStyle(category: EventCategory, isDark: boolean =
         return 'text-emerald-400 bg-emerald-400/10 border-emerald-400/20';
       case 'Corporate':
         return 'text-violet-400 bg-violet-400/10 border-violet-400/20';
-      case 'Summit':
-        return 'text-indigo-400 bg-indigo-400/10 border-indigo-400/20';
       case 'Community':
         return 'text-rose-400 bg-rose-400/10 border-rose-400/20';
       default:
@@ -42,8 +40,6 @@ export function getCategoryBadgeStyle(category: EventCategory, isDark: boolean =
         return 'text-emerald-900 bg-emerald-500/15 border-emerald-500/35';
       case 'Corporate':
         return 'text-violet-900 bg-violet-500/15 border-violet-500/35';
-      case 'Summit':
-        return 'text-indigo-900 bg-indigo-500/15 border-indigo-500/35';
       case 'Community':
         return 'text-rose-900 bg-rose-500/15 border-rose-500/35';
       default:

@@ -47,7 +47,7 @@ export const Header: React.FC<HeaderProps> = ({ onSuggestClick, eventCount, acti
             <button
               id="theme-toggle-btn"
               onClick={toggleTheme}
-              aria-label={isDark ? "Switch to Day Mode" : "Switch to Dark Mode"}
+              aria-label={isDark ? "Switch to Day Mode" : "Switch to Night Mode"}
               className={`flex items-center gap-1.5 px-2.5 py-1 rounded-lg text-xs font-semibold tracking-wide transition-all cursor-pointer ${
                 isDark 
                   ? 'bg-white/[0.06] hover:bg-white/[0.1] text-zinc-200 hover:text-white border border-white/[0.08]' 
@@ -62,7 +62,7 @@ export const Header: React.FC<HeaderProps> = ({ onSuggestClick, eventCount, acti
               ) : (
                 <>
                   <Moon className="w-3.5 h-3.5 text-zinc-700" />
-                  <span className="text-[11px]">Dark Mode</span>
+                  <span className="text-[11px]">Night Mode</span>
                 </>
               )}
             </button>
