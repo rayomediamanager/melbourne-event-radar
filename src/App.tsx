@@ -6,7 +6,7 @@ import { EventCard } from './components/EventCard';
 import { EventDetailModal } from './components/EventDetailModal';
 import { SuggestEventModal } from './components/SuggestEventModal';
 import { Footer } from './components/Footer';
-import { EVENTS, getVenuesList } from './data/events';
+import { EVENTS, getVenuesList, isPrimaryVenue } from './data/events';
 import { MelbourneEvent } from './types';
 import { SearchX, Archive, History, ArrowLeft, Clock, ArrowUpDown } from 'lucide-react';
 import { AnimatePresence } from 'motion/react';
@@ -146,9 +146,15 @@ export default function App() {
         return false;
       }
 
-      // 3. Venue match
-      if (selectedVenue !== 'All' && event.venue !== selectedVenue) {
-        return false;
+      // 3. Venue match (supports 5 primary venues + 'Others')
+      if (selectedVenue !== 'All') {
+        if (selectedVenue === 'Others') {
+          if (isPrimaryVenue(event.venue)) {
+            return false;
+          }
+        } else if (!event.venue.toLowerCase().includes(selectedVenue.toLowerCase())) {
+          return false;
+        }
       }
 
       // 4. Keyword Search

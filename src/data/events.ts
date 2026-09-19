@@ -71,10 +71,28 @@ export const CATEGORIES: { label: string; value: string }[] = [
   { label: 'Networking', value: 'Networking' }
 ];
 
-export function getVenuesList(events: MelbourneEvent[]): string[] {
-  const venues = new Set<string>();
-  events.forEach(e => {
-    if (e.venue) venues.add(e.venue);
-  });
-  return Array.from(venues).sort();
+export const PRIMARY_VENUES = [
+  'Melbourne Convention and Exhibition Centre',
+  'Royal Exhibition Building',
+  'CENTREPIECE at Melbourne Park',
+  'Crown Promenade Melbourne',
+  'Rydges Melbourne'
+] as const;
+
+export const OTHER_VENUE_LABEL = 'Others';
+
+export function isPrimaryVenue(venue: string): boolean {
+  return PRIMARY_VENUES.some((pv) => venue.toLowerCase().includes(pv.toLowerCase()));
+}
+
+export function getVenueCategory(venue: string): string {
+  const match = PRIMARY_VENUES.find((pv) => venue.toLowerCase().includes(pv.toLowerCase()));
+  return match || OTHER_VENUE_LABEL;
+}
+
+export function getVenuesList(_events?: MelbourneEvent[]): string[] {
+  return [
+    ...PRIMARY_VENUES,
+    OTHER_VENUE_LABEL
+  ];
 }

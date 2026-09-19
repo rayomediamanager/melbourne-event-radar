@@ -94,7 +94,7 @@ export const FilterBar: React.FC<FilterBarProps> = ({
                     value={venue} 
                     className={isDark ? 'bg-[#1f1f23] text-white' : 'bg-zinc-100 text-zinc-900'}
                   >
-                    {venue}
+                    {venue === 'Others' ? 'Others (Other Venues)' : venue}
                   </option>
                 ))}
               </select>
