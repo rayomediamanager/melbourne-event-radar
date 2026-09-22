@@ -700,6 +700,26 @@
     "featured": false
   },
   {
+    "id": "victesol-symposium-2026",
+    "name": "VicTESOL Symposium 2026",
+    "startDate": "2026-10-30",
+    "endDate": "2026-10-30",
+    "dateDisplay": "30 October 2026",
+    "venue": "The University of Melbourne (Kwong Lee Dow Building)",
+    "suburb": "234 Queensberry St, Parkville",
+    "category": "Conference",
+    "organiser": "VicTESOL (Victorian Association for TESOL Lecturers and Teachers)",
+    "description": "A full-day professional learning symposium themed \"From research to the classroom: Putting theory into practice,\" bringing together EAL educators, researchers, and practitioners from across Victoria to explore how research informs classroom instruction and vice versa.",
+    "officialWebsite": "https://victesol.vic.edu.au/professional-learning/",
+    "sourceUrl": "https://victesol.vic.edu.au/professional-learning/",
+    "lastVerified": "September 2026",
+    "status": "Confirmed",
+    "industry": "Education, Applied Linguistics & TESOL",
+    "audience": "EAL Educators, Researchers, Teachers, Academic Practitioners",
+    "priceFrom": "Registration via VicTESOL",
+    "featured": false
+  },
+  {
     "id": "australian-social-cohesion-summit-2026",
     "name": "Australian Social Cohesion Summit 2026",
     "startDate": "2026-11-05",
