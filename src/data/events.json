@@ -420,6 +420,26 @@
     "featured": false
   },
   {
+    "id": "scenescape-sony-2026",
+    "name": "SceneScape 2026 (Presented by Sony)",
+    "startDate": "2026-10-03",
+    "endDate": "2026-10-04",
+    "dateDisplay": "3–4 October 2026",
+    "venue": "Royal Exhibition Building",
+    "suburb": "Carlton",
+    "category": "Expo",
+    "organiser": "Sony Australia (Sony Scene)",
+    "description": "Sony's flagship photo, video, and content creation expo in Australia. The event features hands-on demonstrations across four immersive genre zones (Landscape, Portraiture, Wildlife, and Cinema), expert masterclasses, technical workshops, live product trials with Sony Alpha cameras and lenses, and the 2026 Alpha Awards photo gallery showcase.",
+    "officialWebsite": "https://scene.sonyanz.com/sne-hub/explore-all/scenescape",
+    "sourceUrl": "https://scene.sonyanz.com/sne-hub/explore-all/scenescape",
+    "lastVerified": "September 2026",
+    "status": "Confirmed",
+    "industry": "Photography, Videography & Digital Content Creation",
+    "audience": "Photographers, Filmmakers, Digital Creators, Media Professionals",
+    "priceFrom": "Registration via Sony Scene",
+    "featured": true
+  },
+  {
     "id": "australian-marketing-summit-2026",
     "name": "Australian Marketing Summit 2026",
     "startDate": "2026-10-05",
