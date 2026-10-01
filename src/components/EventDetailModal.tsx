@@ -210,6 +210,27 @@ export const EventDetailModal: React.FC<EventDetailModalProps> = ({
                   Industry: <span className={isDark ? 'text-zinc-300' : 'text-zinc-900 font-medium'}>{event.industry}</span>
                 </p>
               )}
+              {event.industryCategories && event.industryCategories.length > 0 && (
+                <div className="flex items-center gap-1.5 pt-0.5">
+                  <span className={`text-[10px] uppercase font-bold tracking-wider ${isDark ? 'text-zinc-500' : 'text-zinc-500'}`}>
+                    Verticals:
+                  </span>
+                  <div className="flex flex-wrap gap-1">
+                    {event.industryCategories.map((cat) => (
+                      <span
+                        key={cat}
+                        className={`text-[10px] font-semibold px-2 py-0.5 rounded border ${
+                          isDark
+                            ? 'bg-amber-400/10 text-amber-300 border-amber-400/20'
+                            : 'bg-amber-50 text-amber-900 border-amber-300'
+                        }`}
+                      >
+                        {cat}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              )}
               {event.priceFrom && (
                 <p className={isDark ? 'text-zinc-400' : 'text-zinc-600'}>
                   Pricing: <span className={isDark ? 'text-zinc-300' : 'text-zinc-900 font-medium'}>{event.priceFrom}</span>

@@ -6,7 +6,7 @@ import { EventCard } from './components/EventCard';
 import { EventDetailModal } from './components/EventDetailModal';
 import { SuggestEventModal } from './components/SuggestEventModal';
 import { Footer } from './components/Footer';
-import { EVENTS, getVenuesList, isPrimaryVenue } from './data/events';
+import { EVENTS, getVenuesList, isPrimaryVenue, isEventMatchingIndustry } from './data/events';
 import { MelbourneEvent } from './types';
 import { SearchX, Archive, History, ArrowLeft, Clock, ArrowUpDown } from 'lucide-react';
 import { AnimatePresence } from 'motion/react';
@@ -52,6 +52,7 @@ export default function App() {
 
   const [selectedMonth, setSelectedMonth] = useState<string>(defaultMonthKey);
   const [selectedCategory, setSelectedCategory] = useState<string>('All');
+  const [selectedIndustry, setSelectedIndustry] = useState<string>('All');
   const [selectedVenue, setSelectedVenue] = useState<string>('All');
   const [searchQuery, setSearchQuery] = useState<string>('');
   
@@ -141,8 +142,13 @@ export default function App() {
         }
       }
 
-      // 2. Category match
+      // 2. Category match (Type)
       if (selectedCategory !== 'All' && event.category !== selectedCategory) {
+        return false;
+      }
+
+      // 2b. Industry match
+      if (selectedIndustry !== 'All' && !isEventMatchingIndustry(event, selectedIndustry)) {
         return false;
       }
 
@@ -166,6 +172,7 @@ export default function App() {
         const matchSuburb = event.suburb.toLowerCase().includes(query);
         const matchOrganiser = (event.organiser || '').toLowerCase().includes(query);
         const matchIndustry = (event.industry || '').toLowerCase().includes(query);
+        const matchIndustryCats = (event.industryCategories || []).some((c) => c.toLowerCase().includes(query));
 
         if (
           !matchName &&
@@ -173,7 +180,8 @@ export default function App() {
           !matchVenue &&
           !matchSuburb &&
           !matchOrganiser &&
-          !matchIndustry
+          !matchIndustry &&
+          !matchIndustryCats
         ) {
           return false;
         }
@@ -202,6 +210,7 @@ export default function App() {
     showMonthArchived,
     archiveSortOrder,
     selectedCategory,
+    selectedIndustry,
     selectedVenue,
     searchQuery,
     todayStr,
@@ -209,6 +218,7 @@ export default function App() {
 
   const handleResetFilters = () => {
     setSelectedCategory('All');
+    setSelectedIndustry('All');
     setSelectedVenue('All');
     setSearchQuery('');
   };
@@ -262,6 +272,8 @@ export default function App() {
         <FilterBar
           selectedCategory={selectedCategory}
           onSelectCategory={setSelectedCategory}
+          selectedIndustry={selectedIndustry}
+          onSelectIndustry={setSelectedIndustry}
           selectedVenue={selectedVenue}
           onSelectVenue={setSelectedVenue}
           venues={allVenues}

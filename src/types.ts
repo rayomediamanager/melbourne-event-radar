@@ -6,6 +6,14 @@ export type EventCategory =
   | 'Networking'
   | 'Other';
 
+export type IndustryCategory = 
+  | 'Infrastructure'
+  | 'Healthcare'
+  | 'Research'
+  | 'Creative'
+  | 'Commerce'
+  | 'Civic';
+
 export type EventStatus = 'Confirmed' | 'Postponed' | 'Cancelled' | 'TBC';
 
 export type CalculatedEventStatus = 'Upcoming' | 'Completed' | 'Postponed' | 'Cancelled' | 'TBC';
@@ -28,6 +36,7 @@ export interface MelbourneEvent {
   
   // Optional metadata fields
   industry?: string; // e.g., 'Information Technology', 'Biotechnology'
+  industryCategories?: IndustryCategory[]; // e.g., ['Infrastructure', 'Commerce']
   audience?: string; // e.g., 'Enterprise leaders, IT infrastructure teams'
   priceFrom?: string; // e.g., 'Free expo pass' or '$250'
   featured?: boolean;

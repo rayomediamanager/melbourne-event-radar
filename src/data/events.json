@@ -17,7 +17,10 @@
     "industry": "Wealth Management, Equities & Investment",
     "audience": "Private Investors, Company Directors, Portfolio Managers, Economists",
     "priceFrom": "Member / Non-Member Pass",
-    "featured": false
+    "featured": false,
+    "industryCategories": [
+      "Commerce"
+    ]
   },
   {
     "id": "acta-treasury-conference-2026",
@@ -37,7 +40,10 @@
     "industry": "Banking, Corporate Finance & Treasury",
     "audience": "Corporate Treasurers, CFOs, Risk Managers, Financial Technology Leads",
     "priceFrom": "Delegate Registration",
-    "featured": false
+    "featured": false,
+    "industryCategories": [
+      "Commerce"
+    ]
   },
   {
     "id": "short-stay-hospitals-forum-2026",
@@ -57,7 +63,11 @@
     "industry": "Healthcare & Hospital Infrastructure",
     "audience": "Hospital Operators, Day Surgery Executives, Healthcare Investors, Insurers",
     "priceFrom": "Registration Required",
-    "featured": false
+    "featured": false,
+    "industryCategories": [
+      "Healthcare",
+      "Infrastructure"
+    ]
   },
   {
     "id": "residential-market-update-outlook-2026",
@@ -77,7 +87,11 @@
     "industry": "Property, Real Estate & Urban Planning",
     "audience": "Property Developers, Valuers, Planners, Real Estate Executives",
     "priceFrom": "Briefing Registration",
-    "featured": false
+    "featured": false,
+    "industryCategories": [
+      "Commerce",
+      "Infrastructure"
+    ]
   },
   {
     "id": "mainstream-conference-2026",
@@ -97,7 +111,10 @@
     "industry": "Asset Management, Reliability & Engineering",
     "audience": "Asset Managers, Reliability Engineers, Maintenance Leaders, Technology Innovators",
     "priceFrom": "Conference Pass Required",
-    "featured": true
+    "featured": true,
+    "industryCategories": [
+      "Infrastructure"
+    ]
   },
   {
     "id": "acannabis-conference-exhibition-2026",
@@ -117,7 +134,11 @@
     "industry": "Pharmaceuticals & Agritech",
     "audience": "Clinical Researchers, Healthcare Executives, Regulators, Biotech Investors",
     "priceFrom": "Delegate Pass",
-    "featured": false
+    "featured": false,
+    "industryCategories": [
+      "Healthcare",
+      "Research"
+    ]
   },
   {
     "id": "cdao-melbourne-2026",
@@ -137,7 +158,11 @@
     "industry": "Data Science, Artificial Intelligence & IT Leadership",
     "audience": "Chief Data Officers, Chief Analytics Officers, CIOs, Enterprise Architects",
     "priceFrom": "Enterprise Registration",
-    "featured": true
+    "featured": true,
+    "industryCategories": [
+      "Research",
+      "Commerce"
+    ]
   },
   {
     "id": "lead-the-way-conference-2026",
@@ -157,7 +182,11 @@
     "industry": "Workplace Health, Safety & Wellbeing",
     "audience": "WHS Professionals, HR Leaders, Safety Officers, Corporate Executives",
     "priceFrom": "Registration Required",
-    "featured": false
+    "featured": false,
+    "industryCategories": [
+      "Healthcare",
+      "Civic"
+    ]
   },
   {
     "id": "intersekt-fintech-festival-2026",
@@ -177,7 +206,10 @@
     "industry": "Fintech & Venture Capital",
     "audience": "Fintech Founders, Banking Leaders, Venture Capitalists, Regulators",
     "priceFrom": "Tickets Available",
-    "featured": true
+    "featured": true,
+    "industryCategories": [
+      "Commerce"
+    ]
   },
   {
     "id": "bowens-building-innovation-expo-2026",
@@ -197,7 +229,10 @@
     "industry": "Building & Construction",
     "audience": "Builders, Commercial Contractors, Architects, Tradespeople, Suppliers",
     "priceFrom": "Free Trade Registration",
-    "featured": true
+    "featured": true,
+    "industryCategories": [
+      "Infrastructure"
+    ]
   },
   {
     "id": "acetie-ccfa-expo-2026",
@@ -217,7 +252,10 @@
     "industry": "Trade, Investment & International Business",
     "audience": "Business Leaders, Importers, Exporters, Investors, Technology Pioneers",
     "priceFrom": "Registration Required",
-    "featured": true
+    "featured": true,
+    "industryCategories": [
+      "Commerce"
+    ]
   },
   {
     "id": "walkme-on-tour-melbourne-2026",
@@ -237,7 +275,10 @@
     "industry": "Digital Adoption & Enterprise Software",
     "audience": "CIOs, IT Executives, Digital Transformation Leaders, Change Managers",
     "priceFrom": "Complimentary / By Invitation",
-    "featured": false
+    "featured": false,
+    "industryCategories": [
+      "Commerce"
+    ]
   },
   {
     "id": "megatrans-2026",
@@ -257,7 +298,11 @@
     "industry": "Freight, Logistics & Supply Chain",
     "audience": "Fleet Managers, Supply Chain Executives, Logistics Providers, Warehousing Specialists",
     "priceFrom": "Free Trade Registration / Conference Pass",
-    "featured": true
+    "featured": true,
+    "industryCategories": [
+      "Infrastructure",
+      "Commerce"
+    ]
   },
   {
     "id": "sxhibition-melbourne-2026",
@@ -277,7 +322,11 @@
     "industry": "Wellness, Lifestyle & Adult Retail",
     "audience": "Consumers, Retail Buyers, Industry Vendors, Performers",
     "priceFrom": "Tickets Available",
-    "featured": false
+    "featured": false,
+    "industryCategories": [
+      "Commerce",
+      "Creative"
+    ]
   },
   {
     "id": "one-fine-baby-expo-melbourne-2026",
@@ -297,7 +346,11 @@
     "industry": "Consumer Goods & Healthcare",
     "audience": "Maternity Brands, Healthcare Professionals, Expecting Parents, Retail Buyers",
     "priceFrom": "Free Admission with Pre-Registration",
-    "featured": false
+    "featured": false,
+    "industryCategories": [
+      "Healthcare",
+      "Commerce"
+    ]
   },
   {
     "id": "retail-show-australia-expo-2026",
@@ -317,7 +370,10 @@
     "industry": "Retail, E-Commerce & Retail Technology",
     "audience": "Retailers, Brand Executives, E-commerce Specialists, Store Designers",
     "priceFrom": "Trade Registration Required",
-    "featured": true
+    "featured": true,
+    "industryCategories": [
+      "Commerce"
+    ]
   },
   {
     "id": "wfpicc-congress-2026",
@@ -337,7 +393,11 @@
     "industry": "Healthcare, Pediatrics & Critical Care Medicine",
     "audience": "Pediatric Intensivists, Critical Care Physicians, Clinical Researchers, Healthcare Professionals",
     "priceFrom": "Delegate Registration",
-    "featured": true
+    "featured": true,
+    "industryCategories": [
+      "Healthcare",
+      "Research"
+    ]
   },
   {
     "id": "eca-national-conference-2026",
@@ -357,7 +417,11 @@
     "industry": "Education & Early Childhood",
     "audience": "Educators, Early Childhood Leaders, Researchers, Industry Suppliers",
     "priceFrom": "Registration Required",
-    "featured": true
+    "featured": true,
+    "industryCategories": [
+      "Research",
+      "Civic"
+    ]
   },
   {
     "id": "crichton-medal-2026",
@@ -377,7 +441,10 @@
     "industry": "Sports Business & Corporate Hospitality",
     "audience": "Corporate Sponsors, Club Executives, Sports Stakeholders",
     "priceFrom": "Corporate Hospitality",
-    "featured": false
+    "featured": false,
+    "industryCategories": [
+      "Civic"
+    ]
   },
   {
     "id": "anika-legals-housing-justice-forum-2026",
@@ -397,7 +464,10 @@
     "industry": "Housing Justice, Tenancy Rights & Social Legal Policy",
     "audience": "Government Officials, Legal Practitioners, Community Sector Leaders, Tenancy Advocates",
     "priceFrom": "Registration via Humanitix",
-    "featured": false
+    "featured": false,
+    "industryCategories": [
+      "Civic"
+    ]
   },
   {
     "id": "blue-ribbon-foundation-charity-ball-2026",
@@ -417,7 +487,10 @@
     "industry": "Corporate Philanthropy & Civic Leadership",
     "audience": "Civic Leaders, Corporate Supporters, Law Enforcement Leadership",
     "priceFrom": "Charity Gala Ticket",
-    "featured": false
+    "featured": false,
+    "industryCategories": [
+      "Civic"
+    ]
   },
   {
     "id": "scenescape-sony-2026",
@@ -437,7 +510,10 @@
     "industry": "Photography, Videography & Digital Content Creation",
     "audience": "Photographers, Filmmakers, Digital Creators, Media Professionals",
     "priceFrom": "Registration via Sony Scene",
-    "featured": true
+    "featured": true,
+    "industryCategories": [
+      "Creative"
+    ]
   },
   {
     "id": "australian-marketing-summit-2026",
@@ -457,7 +533,11 @@
     "industry": "Marketing & Digital Business",
     "audience": "Business Owners, Entrepreneurs, Marketing Professionals",
     "priceFrom": "Tickets Available",
-    "featured": false
+    "featured": false,
+    "industryCategories": [
+      "Creative",
+      "Commerce"
+    ]
   },
   {
     "id": "bni-melbourne-city-corporate-networking-oct-2026",
@@ -477,7 +557,10 @@
     "industry": "Corporate Networking & Business Referrals",
     "audience": "Local Business Owners, Executives, Trade Professionals",
     "priceFrom": "Registration Available",
-    "featured": false
+    "featured": false,
+    "industryCategories": [
+      "Commerce"
+    ]
   },
   {
     "id": "issa-cleaning-hygiene-expo-2026",
@@ -497,7 +580,10 @@
     "industry": "Cleaning, Facility Management & Hygiene",
     "audience": "Facility Managers, Commercial Cleaning Contractors, Health Leads",
     "priceFrom": "Trade Registration",
-    "featured": false
+    "featured": false,
+    "industryCategories": [
+      "Infrastructure"
+    ]
   },
   {
     "id": "finders-keepers-melbourne-design-market-ss2026",
@@ -517,7 +603,11 @@
     "industry": "Design, Creative Business & Retail",
     "audience": "Independent Designers, Creative Founders, Retail Buyers",
     "priceFrom": "Ticketed Entry",
-    "featured": true
+    "featured": true,
+    "industryCategories": [
+      "Creative",
+      "Commerce"
+    ]
   },
   {
     "id": "pax-australia-2026",
@@ -537,7 +627,10 @@
     "industry": "Digital Entertainment & Gaming Tech",
     "audience": "Game Developers, Hardware Manufacturers, Publishers, Creators",
     "priceFrom": "Badge Required",
-    "featured": true
+    "featured": true,
+    "industryCategories": [
+      "Creative"
+    ]
   },
   {
     "id": "comms-connect-melbourne-2026",
@@ -557,7 +650,11 @@
     "industry": "Telecommunications & Public Safety",
     "audience": "Emergency Services, Network Engineers, Public Safety Officials",
     "priceFrom": "Delegate Registration",
-    "featured": false
+    "featured": false,
+    "industryCategories": [
+      "Infrastructure",
+      "Civic"
+    ]
   },
   {
     "id": "senior-presentation-night-2026",
@@ -577,7 +674,10 @@
     "industry": "Sports Corporate & Association Awards",
     "audience": "Sports Executives, Corporate Sponsors, Athletes, Stakeholders",
     "priceFrom": "Gala Dinner Ticket",
-    "featured": false
+    "featured": false,
+    "industryCategories": [
+      "Civic"
+    ]
   },
   {
     "id": "melbourne-italian-festa-expo-2026",
@@ -597,7 +697,11 @@
     "industry": "International Trade, Culture & Commerce",
     "audience": "Commercial Exhibitors, Trade Buyers, Business Community",
     "priceFrom": "Free & Ticketed Entry",
-    "featured": false
+    "featured": false,
+    "industryCategories": [
+      "Commerce",
+      "Creative"
+    ]
   },
   {
     "id": "icds-2026",
@@ -617,7 +721,11 @@
     "industry": "Healthcare & Medical Science",
     "audience": "Gastroenterologists, Clinical Researchers, Dietitians",
     "priceFrom": "Registration Required",
-    "featured": true
+    "featured": true,
+    "industryCategories": [
+      "Healthcare",
+      "Research"
+    ]
   },
   {
     "id": "ifa-congress-melbourne-2026",
@@ -637,7 +745,11 @@
     "industry": "International Tax, Legal & Fiscal Policy",
     "audience": "International Tax Professionals, Corporate Lawyers, Government Delegates, Academic Experts",
     "priceFrom": "Delegate Registration",
-    "featured": true
+    "featured": true,
+    "industryCategories": [
+      "Commerce",
+      "Civic"
+    ]
   },
   {
     "id": "bioinputs-australia-2026",
@@ -657,7 +769,11 @@
     "industry": "Agritech & Biological Agriculture",
     "audience": "Agronomists, Agricultural Scientists, Biotech Founders, Regulators",
     "priceFrom": "Registration Required",
-    "featured": false
+    "featured": false,
+    "industryCategories": [
+      "Research",
+      "Infrastructure"
+    ]
   },
   {
     "id": "startup-business-networking-melbourne-oct-2026",
@@ -677,7 +793,10 @@
     "industry": "Startups, Venture Capital & Entrepreneurship",
     "audience": "Startup Founders, Venture Investors, Tech Builders, Corporate Entrepreneurs",
     "priceFrom": "Ticket Registration",
-    "featured": false
+    "featured": false,
+    "industryCategories": [
+      "Commerce"
+    ]
   },
   {
     "id": "all-energy-australia-2026",
@@ -697,7 +816,10 @@
     "industry": "Clean Energy & Renewables",
     "audience": "Clean Energy Executives, Engineers, Policy Leads, Investors",
     "priceFrom": "Free Trade Expo / Paid Conference",
-    "featured": true
+    "featured": true,
+    "industryCategories": [
+      "Infrastructure"
+    ]
   },
   {
     "id": "greener-infrastructure-conference-2026",
@@ -717,7 +839,10 @@
     "industry": "Infrastructure, Construction & Sustainability",
     "audience": "Government Authorities, Tier-1 Contractors, Civil Engineers, Material Innovators",
     "priceFrom": "Registration Required",
-    "featured": false
+    "featured": false,
+    "industryCategories": [
+      "Infrastructure"
+    ]
   },
   {
     "id": "victesol-symposium-2026",
@@ -737,7 +862,11 @@
     "industry": "Education, Applied Linguistics & TESOL",
     "audience": "EAL Educators, Researchers, Teachers, Academic Practitioners",
     "priceFrom": "Registration via VicTESOL",
-    "featured": false
+    "featured": false,
+    "industryCategories": [
+      "Research",
+      "Civic"
+    ]
   },
   {
     "id": "australian-social-cohesion-summit-2026",
@@ -757,7 +886,11 @@
     "industry": "Social Policy, Research & Governance",
     "audience": "Government, Academic & Community Leaders, Policy Researchers",
     "priceFrom": "Delegate Registration",
-    "featured": true
+    "featured": true,
+    "industryCategories": [
+      "Civic",
+      "Research"
+    ]
   },
   {
     "id": "marketing-leaders-summit-2026",
@@ -777,7 +910,11 @@
     "industry": "B2B Marketing, Brand Strategy & Technology",
     "audience": "Senior CMOs, Marketing Executives, Digital Growth Leaders",
     "priceFrom": "Executive Registration",
-    "featured": true
+    "featured": true,
+    "industryCategories": [
+      "Creative",
+      "Commerce"
+    ]
   },
   {
     "id": "vcpa-annual-conference-awards-2026",
@@ -797,7 +934,11 @@
     "industry": "Media, Publishing & Communications",
     "audience": "Publishers, Regional Media Executives, Journalists, Media Agency Leads",
     "priceFrom": "Conference & Gala Registration",
-    "featured": false
+    "featured": false,
+    "industryCategories": [
+      "Creative",
+      "Commerce"
+    ]
   },
   {
     "id": "mindbodyspirit-festival-melbourne-2026",
@@ -817,7 +958,11 @@
     "industry": "Health, Wellness & Natural Lifestyle",
     "audience": "Consumers, Wellness Practitioners, Retail Buyers, Exhibitors",
     "priceFrom": "Tickets & Free Entry Passes",
-    "featured": true
+    "featured": true,
+    "industryCategories": [
+      "Healthcare",
+      "Commerce"
+    ]
   },
   {
     "id": "startup-business-networking-melbourne-nov-2026",
@@ -837,7 +982,10 @@
     "industry": "Startups, Venture Capital & Entrepreneurship",
     "audience": "Entrepreneurs, Angel Investors, Digital Innovators, Service Providers",
     "priceFrom": "Ticket Registration",
-    "featured": false
+    "featured": false,
+    "industryCategories": [
+      "Commerce"
+    ]
   },
   {
     "id": "global-sourcing-expo-melbourne-2026",
@@ -857,7 +1005,10 @@
     "industry": "International Trade, Sourcing & Manufacturing",
     "audience": "Importers, Wholesalers, Retail Buyers, Product Developers",
     "priceFrom": "Free Trade Registration",
-    "featured": true
+    "featured": true,
+    "industryCategories": [
+      "Commerce"
+    ]
   },
   {
     "id": "apbc-vic-networking-night-2026",
@@ -877,7 +1028,10 @@
     "industry": "International Trade & Bilateral Commerce",
     "audience": "Business Leaders, Trade Delegates, Policy Advisors, Entrepreneurs",
     "priceFrom": "Member / Guest Registration",
-    "featured": false
+    "featured": false,
+    "industryCategories": [
+      "Commerce"
+    ]
   },
   {
     "id": "melbourne-disability-expo-2026",
@@ -897,7 +1051,11 @@
     "industry": "Healthcare, Disability & NDIS Services",
     "audience": "Service Providers, Assistive Tech Manufacturers, Allied Health Professionals, NDIS Delegates",
     "priceFrom": "Free Admission",
-    "featured": true
+    "featured": true,
+    "industryCategories": [
+      "Healthcare",
+      "Civic"
+    ]
   },
   {
     "id": "melbourne-build-expo-2026",
@@ -917,7 +1075,10 @@
     "industry": "Construction, Architecture & Design",
     "audience": "Contractors, Developers, Engineers, Government Representatives, Architects",
     "priceFrom": "Free Trade Registration",
-    "featured": true
+    "featured": true,
+    "industryCategories": [
+      "Infrastructure"
+    ]
   },
   {
     "id": "women-in-leadership-dinner-2026",
@@ -937,7 +1098,11 @@
     "industry": "Executive Leadership & Venture Innovation",
     "audience": "Business Leaders, Founders, Senior Executives",
     "priceFrom": "Table & Seat Registration",
-    "featured": true
+    "featured": true,
+    "industryCategories": [
+      "Commerce",
+      "Civic"
+    ]
   },
   {
     "id": "the-little-food-market-2026",
@@ -957,7 +1122,11 @@
     "industry": "Food, Beverage & Hospitality",
     "audience": "Boutique Food Producers, Distillers, Winemakers, Culinary Industry Exhibitors",
     "priceFrom": "Admission Available",
-    "featured": true
+    "featured": true,
+    "industryCategories": [
+      "Creative",
+      "Commerce"
+    ]
   },
   {
     "id": "iss-institute-fellowship-awards-2026",
@@ -977,7 +1146,11 @@
     "industry": "Vocational Education, Trade Skills & Innovation",
     "audience": "Industry Leaders, Vocational Education Executives, Policy Specialists, Corporate Sponsors",
     "priceFrom": "Ticket / Invitation Registration",
-    "featured": false
+    "featured": false,
+    "industryCategories": [
+      "Research",
+      "Civic"
+    ]
   },
   {
     "id": "wcbip-2026",
@@ -997,7 +1170,11 @@
     "industry": "Medicine, Interventional Pulmonology & Thoracic Care",
     "audience": "Interventional Pulmonologists, Thoracic Surgeons, Critical Care Specialists",
     "priceFrom": "Delegate Registration",
-    "featured": true
+    "featured": true,
+    "industryCategories": [
+      "Healthcare",
+      "Research"
+    ]
   },
   {
     "id": "the-big-design-market-christmas-2026",
@@ -1017,7 +1194,11 @@
     "industry": "Design, Retail & Creative Arts",
     "audience": "Designers, Retail Buyers, Creative Entrepreneurs, Shoppers",
     "priceFrom": "Admission at Door / Online",
-    "featured": true
+    "featured": true,
+    "industryCategories": [
+      "Creative",
+      "Commerce"
+    ]
   },
   {
     "id": "australian-tattoo-expo-melbourne-2026",
@@ -1037,7 +1218,10 @@
     "industry": "Creative Arts, Body Art & Lifestyle",
     "audience": "Tattoo Artists, Equipment Manufacturers, Studio Owners, Lifestyle Brands",
     "priceFrom": "Tickets Available",
-    "featured": true
+    "featured": true,
+    "industryCategories": [
+      "Creative"
+    ]
   },
   {
     "id": "good-food-wine-show-christmas-market-2026",
@@ -1057,7 +1241,11 @@
     "industry": "Food, Wine & Hospitality",
     "audience": "Artisan Producers, Wine Suppliers, Corporate Buyers, Food Enthusiasts",
     "priceFrom": "Tickets Available",
-    "featured": true
+    "featured": true,
+    "industryCategories": [
+      "Creative",
+      "Commerce"
+    ]
   },
   {
     "id": "sahof-induction-awards-gala-2026",
@@ -1077,7 +1265,10 @@
     "industry": "Sports Governance & Business Leadership",
     "audience": "Sports Executives, Corporate Leaders, Hall of Fame Inductees, Media",
     "priceFrom": "Corporate Tables & Tickets",
-    "featured": true
+    "featured": true,
+    "industryCategories": [
+      "Civic"
+    ]
   },
   {
     "id": "hyrox-melbourne-2026",
@@ -1097,6 +1288,10 @@
     "industry": "Sports, Fitness & Athletic Technology",
     "audience": "Fitness Industry Professionals, Athletes, Sports Brands, Commercial Partners",
     "priceFrom": "Athlete Registration / Spectator Tickets",
-    "featured": true
+    "featured": true,
+    "industryCategories": [
+      "Civic",
+      "Commerce"
+    ]
   }
 ]

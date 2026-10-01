@@ -1,11 +1,13 @@
 import React from 'react';
-import { Search, MapPin, X, SlidersHorizontal } from 'lucide-react';
-import { CATEGORIES } from '../data/events';
+import { Search, MapPin, X, SlidersHorizontal, Briefcase } from 'lucide-react';
+import { CATEGORIES, INDUSTRY_CATEGORIES } from '../data/events';
 import { useTheme } from '../context/ThemeContext';
 
 interface FilterBarProps {
   selectedCategory: string;
   onSelectCategory: (category: string) => void;
+  selectedIndustry: string;
+  onSelectIndustry: (industry: string) => void;
   selectedVenue: string;
   onSelectVenue: (venue: string) => void;
   venues: string[];
@@ -19,6 +21,8 @@ interface FilterBarProps {
 export const FilterBar: React.FC<FilterBarProps> = ({
   selectedCategory,
   onSelectCategory,
+  selectedIndustry,
+  onSelectIndustry,
   selectedVenue,
   onSelectVenue,
   venues,
@@ -29,7 +33,11 @@ export const FilterBar: React.FC<FilterBarProps> = ({
   totalCount,
 }) => {
   const { isDark } = useTheme();
-  const isFiltered = selectedCategory !== 'All' || selectedVenue !== 'All' || searchQuery.trim() !== '';
+  const isFiltered = 
+    selectedCategory !== 'All' || 
+    selectedIndustry !== 'All' || 
+    selectedVenue !== 'All' || 
+    searchQuery.trim() !== '';
 
   return (
     <div className={`py-3.5 transition-colors duration-200 ${
@@ -122,12 +130,12 @@ export const FilterBar: React.FC<FilterBarProps> = ({
           </div>
         </div>
 
-        {/* Category Pills */}
-        <div className="flex items-center gap-1.5 overflow-x-auto pb-1 scrollbar-none pt-1">
-          <span className={`text-[10px] font-bold uppercase tracking-wider pr-2 hidden md:inline-flex items-center gap-1 ${
+        {/* Category Pills (Type Filter) */}
+        <div className="flex items-center gap-1.5 overflow-x-auto pb-0.5 scrollbar-none pt-0.5">
+          <span className={`text-[10px] font-bold uppercase tracking-wider shrink-0 pr-1.5 inline-flex items-center gap-1 min-w-[76px] ${
             isDark ? 'text-zinc-400' : 'text-zinc-600'
           }`}>
-            <SlidersHorizontal className="w-3 h-3 text-zinc-400" />
+            <SlidersHorizontal className="w-3 h-3 text-zinc-400 shrink-0" />
             Type:
           </span>
           {CATEGORIES.map((cat) => {
@@ -137,7 +145,7 @@ export const FilterBar: React.FC<FilterBarProps> = ({
                 key={cat.value}
                 onClick={() => onSelectCategory(cat.value)}
                 className={`
-                  px-3 py-1.5 rounded-lg text-xs font-medium whitespace-nowrap transition-all duration-150 cursor-pointer
+                  px-2.5 sm:px-3 py-1.5 rounded-lg text-xs font-medium whitespace-nowrap transition-all duration-150 cursor-pointer
                   ${
                     isActive
                       ? isDark 
@@ -150,6 +158,39 @@ export const FilterBar: React.FC<FilterBarProps> = ({
                 `}
               >
                 {cat.label}
+              </button>
+            );
+          })}
+        </div>
+
+        {/* Industry Filter Pills (Directly below Type Filter) */}
+        <div className="flex items-center gap-1.5 overflow-x-auto pb-1 scrollbar-none pt-0.5">
+          <span className={`text-[10px] font-bold uppercase tracking-wider shrink-0 pr-1.5 inline-flex items-center gap-1 min-w-[76px] ${
+            isDark ? 'text-zinc-400' : 'text-zinc-600'
+          }`}>
+            <Briefcase className="w-3 h-3 text-zinc-400 shrink-0" />
+            Industry:
+          </span>
+          {INDUSTRY_CATEGORIES.map((ind) => {
+            const isActive = selectedIndustry === ind.value;
+            return (
+              <button
+                key={ind.value}
+                onClick={() => onSelectIndustry(ind.value)}
+                className={`
+                  px-2.5 sm:px-3 py-1.5 rounded-lg text-xs font-medium whitespace-nowrap transition-all duration-150 cursor-pointer
+                  ${
+                    isActive
+                      ? isDark 
+                        ? 'bg-amber-400 text-zinc-950 font-semibold shadow-sm shadow-amber-400/20' 
+                        : 'bg-amber-500 text-zinc-950 font-bold shadow-xs'
+                      : isDark
+                        ? 'bg-white/[0.03] text-zinc-400 hover:text-white hover:bg-white/[0.06] border border-white/[0.04]'
+                        : 'bg-zinc-200/80 text-zinc-700 hover:text-zinc-950 hover:bg-zinc-300 border border-zinc-300/80'
+                  }
+                `}
+              >
+                {ind.label}
               </button>
             );
           })}

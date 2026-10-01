@@ -51,7 +51,7 @@
  * ==============================================================================
  */
 
-import { MelbourneEvent } from '../types';
+import { MelbourneEvent, IndustryCategory } from '../types';
 import rawEvents from './events.json';
 import { generateMonthOptions } from '../utils/dateUtils';
 
@@ -70,6 +70,126 @@ export const CATEGORIES: { label: string; value: string }[] = [
   { label: 'Community', value: 'Community' },
   { label: 'Networking', value: 'Networking' }
 ];
+
+export const INDUSTRY_CATEGORIES: { label: string; value: string }[] = [
+  { label: 'All', value: 'All' },
+  { label: 'Infrastructure', value: 'Infrastructure' },
+  { label: 'Healthcare', value: 'Healthcare' },
+  { label: 'Research', value: 'Research' },
+  { label: 'Creative', value: 'Creative' },
+  { label: 'Commerce', value: 'Commerce' },
+  { label: 'Civic', value: 'Civic' }
+];
+
+// Helper to get industry categories for an event with heuristic fallback
+export function getEventIndustryCategories(event: MelbourneEvent): IndustryCategory[] {
+  if (event.industryCategories && event.industryCategories.length > 0) {
+    return event.industryCategories;
+  }
+
+  const results: IndustryCategory[] = [];
+  const text = `${event.name} ${event.description} ${event.industry || ''}`.toLowerCase();
+
+  if (
+    text.includes('infrastructure') ||
+    text.includes('construction') ||
+    text.includes('building') ||
+    text.includes('energy') ||
+    text.includes('asset management') ||
+    text.includes('freight') ||
+    text.includes('logistics') ||
+    text.includes('facility') ||
+    text.includes('cleaning')
+  ) {
+    results.push('Infrastructure');
+  }
+
+  if (
+    text.includes('health') ||
+    text.includes('medical') ||
+    text.includes('hospital') ||
+    text.includes('pediatric') ||
+    text.includes('pulmonology') ||
+    text.includes('wellness') ||
+    text.includes('disability') ||
+    text.includes('ndis') ||
+    text.includes('cannabis')
+  ) {
+    results.push('Healthcare');
+  }
+
+  if (
+    text.includes('research') ||
+    text.includes('data science') ||
+    text.includes('analytics') ||
+    text.includes('clinical') ||
+    text.includes('symposium') ||
+    text.includes('fellowship') ||
+    text.includes('education') ||
+    text.includes('agritech') ||
+    text.includes('ai')
+  ) {
+    results.push('Research');
+  }
+
+  if (
+    text.includes('photo') ||
+    text.includes('video') ||
+    text.includes('design') ||
+    text.includes('creative') ||
+    text.includes('gaming') ||
+    text.includes('marketing') ||
+    text.includes('content') ||
+    text.includes('arts') ||
+    text.includes('food') ||
+    text.includes('wine') ||
+    text.includes('media') ||
+    text.includes('publishing')
+  ) {
+    results.push('Creative');
+  }
+
+  if (
+    text.includes('retail') ||
+    text.includes('e-commerce') ||
+    text.includes('trade') ||
+    text.includes('commerce') ||
+    text.includes('fintech') ||
+    text.includes('banking') ||
+    text.includes('treasury') ||
+    text.includes('investor') ||
+    text.includes('investment') ||
+    text.includes('startup') ||
+    text.includes('venture') ||
+    text.includes('business') ||
+    text.includes('sourcing') ||
+    text.includes('networking')
+  ) {
+    results.push('Commerce');
+  }
+
+  if (
+    text.includes('civic') ||
+    text.includes('housing') ||
+    text.includes('charity') ||
+    text.includes('philanthropy') ||
+    text.includes('cohesion') ||
+    text.includes('public safety') ||
+    text.includes('governance') ||
+    text.includes('hall of fame') ||
+    text.includes('sports')
+  ) {
+    results.push('Civic');
+  }
+
+  return results.length > 0 ? results : ['Commerce'];
+}
+
+export function isEventMatchingIndustry(event: MelbourneEvent, industry: string): boolean {
+  if (industry === 'All') return true;
+  const categories = getEventIndustryCategories(event);
+  return categories.includes(industry as IndustryCategory);
+}
 
 export const PRIMARY_VENUES = [
   'Melbourne Convention and Exhibition Centre',

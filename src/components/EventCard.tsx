@@ -68,9 +68,20 @@ export const EventCard: React.FC<EventCardProps> = ({ event, onViewDetails, toda
       {/* Top Meta: Category & Status */}
       <div>
         <div className="flex items-center justify-between gap-2 mb-3">
-          <span className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-[11px] font-semibold tracking-wide uppercase border ${categoryBadgeClass}`}>
-            {event.category}
-          </span>
+          <div className="flex items-center gap-1.5 flex-wrap">
+            <span className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-[11px] font-semibold tracking-wide uppercase border ${categoryBadgeClass}`}>
+              {event.category}
+            </span>
+            {event.industryCategories && event.industryCategories.length > 0 && (
+              <span className={`inline-flex items-center px-2 py-0.5 rounded-md text-[10px] font-medium tracking-normal border ${
+                isDark 
+                  ? 'text-zinc-400 bg-white/[0.03] border-white/[0.08]' 
+                  : 'text-zinc-600 bg-zinc-200/80 border-zinc-300'
+              }`}>
+                {event.industryCategories.join(' • ')}
+              </span>
+            )}
+          </div>
 
           <div className="flex items-center gap-2">
             {isCompleted ? (
