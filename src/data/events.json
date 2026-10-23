@@ -845,6 +845,52 @@
     ]
   },
   {
+    "id": "waste-expo-australia-2026",
+    "name": "Waste Expo Australia 2026",
+    "startDate": "2026-10-28",
+    "endDate": "2026-10-29",
+    "dateDisplay": "28–29 October 2026",
+    "venue": "Melbourne Convention and Exhibition Centre",
+    "suburb": "South Wharf",
+    "category": "Expo",
+    "organiser": "RX Global",
+    "description": "Victoria's premier B2B waste management, recycling, and resource recovery exhibition, co-located with All Energy Australia, bringing together commercial contractors, municipal leads, waste technology providers, and environmental engineers.",
+    "officialWebsite": "https://www.wasteexpoaustralia.com.au",
+    "sourceUrl": "https://www.wasteexpoaustralia.com.au/en-gb/visit.html",
+    "lastVerified": "October 2026",
+    "status": "Confirmed",
+    "industry": "Waste Management, Recycling & Resource Recovery",
+    "industryCategories": [
+      "Infrastructure"
+    ],
+    "audience": "Commercial Contractors, Municipal Leads, Waste Technology Providers, Environmental Engineers",
+    "priceFrom": "Free Trade Registration",
+    "featured": true
+  },
+  {
+    "id": "cfa-society-australia-investment-conference-2026",
+    "name": "CFA Society Australia Investment Conference 2026",
+    "startDate": "2026-10-29",
+    "endDate": "2026-10-29",
+    "dateDisplay": "29 October 2026",
+    "venue": "Park Hyatt Melbourne",
+    "suburb": "1 Parliament Pl, East Melbourne",
+    "category": "Conference",
+    "organiser": "CFA Society Australia",
+    "description": "An annual financial industry conference bringing together institutional investors, fund managers, chief investment officers, and economic analysts to discuss portfolio strategy, macroeconomic outlooks, and market governance.",
+    "officialWebsite": "https://cfas.org.au/events/aic/",
+    "sourceUrl": "https://cfas.org.au/events/aic/",
+    "lastVerified": "October 2026",
+    "status": "Confirmed",
+    "industry": "Investment Management, Finance & Macroeconomics",
+    "industryCategories": [
+      "Commerce"
+    ],
+    "audience": "Institutional Investors, Fund Managers, Chief Investment Officers, Economic Analysts",
+    "priceFrom": "Registration via CFA Society Australia",
+    "featured": false
+  },
+  {
     "id": "victesol-symposium-2026",
     "name": "VicTESOL Symposium 2026",
     "startDate": "2026-10-30",
@@ -1129,6 +1175,29 @@
     ]
   },
   {
+    "id": "diabetes-expo-2026",
+    "name": "Diabetes Expo 2026",
+    "startDate": "2026-11-29",
+    "endDate": "2026-11-29",
+    "dateDisplay": "29 November 2026",
+    "venue": "Melbourne Convention and Exhibition Centre",
+    "suburb": "South Wharf",
+    "category": "Expo",
+    "organiser": "Diabetes Victoria",
+    "description": "A dedicated health and lifestyle exhibition designed to help individuals living with diabetes, carers, and health professionals better manage diabetes. The event features interactive exhibits, health technology showcases, practical management workshops, and expert speaker presentations.",
+    "officialWebsite": "https://www.diabetesexpo.com.au",
+    "sourceUrl": "https://www.mcec.com.au/whats-on/diabetes-expo-2026",
+    "lastVerified": "October 2026",
+    "status": "Confirmed",
+    "industry": "Healthcare, Diabetes Management & Medical Tech",
+    "industryCategories": [
+      "Healthcare"
+    ],
+    "audience": "Health Professionals, Diabetes Educators, Individuals & Carers, Medical Technology Providers",
+    "priceFrom": "Free / Ticketed Registration via Diabetes Victoria",
+    "featured": false
+  },
+  {
     "id": "iss-institute-fellowship-awards-2026",
     "name": "2026 ISS Institute Fellowship Awards Ceremony",
     "startDate": "2026-12-02",
@@ -1293,5 +1362,51 @@
       "Civic",
       "Commerce"
     ]
+  },
+  {
+    "id": "leadershift-2027",
+    "name": "LeaderSHIFT 2027",
+    "startDate": "2027-02-12",
+    "endDate": "2027-02-12",
+    "dateDisplay": "12 February 2027",
+    "venue": "Melbourne Convention and Exhibition Centre (Plenary)",
+    "suburb": "South Wharf",
+    "category": "Conference",
+    "organiser": "Growth Faculty",
+    "description": "A full-day executive leadership conference addressing organizational adaptability, courage, and team performance during times of rapid disruption. The conference features keynote presentations by Brené Brown, Liz Wiseman, and Tim Arnold, hosted by Holly Ransom.",
+    "officialWebsite": "https://www.growthfaculty.com",
+    "sourceUrl": "https://www.growthfaculty.com",
+    "lastVerified": "October 2026",
+    "status": "Confirmed",
+    "industry": "Executive Leadership & Organizational Strategy",
+    "industryCategories": [
+      "Commerce"
+    ],
+    "audience": "CEOs, Executive Directors, Business Leaders & People Managers",
+    "priceFrom": "Registration via Growth Faculty",
+    "featured": true
+  },
+  {
+    "id": "aime-2027",
+    "name": "AIME 2027 (Asia Pacific Incentives and Meetings Event)",
+    "startDate": "2027-02-15",
+    "endDate": "2027-02-17",
+    "dateDisplay": "15–17 February 2027",
+    "venue": "Melbourne Convention and Exhibition Centre",
+    "suburb": "South Wharf",
+    "category": "Expo",
+    "organiser": "Talk2 Media & Events (Melbourne Convention Bureau)",
+    "description": "The flagship B2B trade show and networking event for the business events and MICE (Meetings, Incentives, Conferences, and Exhibitions) sector in the Asia-Pacific region, bringing together over 800 global exhibitors and vetted commercial event buyers.",
+    "officialWebsite": "https://aime.com.au",
+    "sourceUrl": "https://aime.com.au",
+    "lastVerified": "October 2026",
+    "status": "Confirmed",
+    "industry": "Business Events, MICE & Corporate Tourism",
+    "industryCategories": [
+      "Commerce"
+    ],
+    "audience": "Corporate Event Planners, MICE Buyers, Global Tourism Bureaus, Event Suppliers",
+    "priceFrom": "Trade Buyer & Visitor Registration via AIME",
+    "featured": true
   }
 ]

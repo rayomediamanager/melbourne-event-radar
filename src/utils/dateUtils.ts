@@ -166,8 +166,8 @@ export function generateMonthOptions(
     isCurrent: true,
   });
 
-  // 3. Next 3 future months tabs (e.g. October, November, December)
-  const futureMonthKeys = sortedMonthKeys.filter((mKey) => mKey > currentMonthKey).slice(0, 3);
+  // 3. Future months tabs that have scheduled events (e.g. November 2026, December 2026, February 2027)
+  const futureMonthKeys = sortedMonthKeys.filter((mKey) => mKey > currentMonthKey);
   futureMonthKeys.forEach((mKey) => {
     const stats = monthMap.get(mKey)!;
     options.push({
